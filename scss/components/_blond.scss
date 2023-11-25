@@ -1,0 +1,88 @@
+.blond {
+  font-family: Poppins;
+  position: relative;
+  &__content {
+    position: absolute;
+    top: 456px;
+    left: px;
+  }
+  h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+  h2 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+  }
+  button {
+    background: #22262a;
+    color: #fff;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 500;
+    border: none;
+    padding: 4px 25px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #fff;
+    color: #22262a;
+  }
+}
+.full-container img {
+  max-width: 100%;
+}
+@media screen and (max-width: 1366px) {
+  .blond {
+    button {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .blond {
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .blond {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+@media screen and (max-width: 1081px) {
+  .blond {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media screen and (max-width: 1048px) {
+  .blond {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1048px) {
+  .blond {
+    h2 {
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 1048px) {
+  .blond {
+    h2 {
+      display: none;
+    }
+  }
+}

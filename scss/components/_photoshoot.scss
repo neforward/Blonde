@@ -1,0 +1,86 @@
+.photoshoot {
+  margin-top: 112px;
+  position: relative;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .endless-frank {
+    position: absolute;
+    max-width: 100%;
+  }
+  .blonde {
+    position: absolute;
+    top: 320px;
+    max-width: 100%;
+  }
+  .tattoo {
+    position: absolute;
+    top: 320px;
+    max-width: 100%;
+    margin-left: 300px;
+  }
+  .frank-photoshoot {
+    position: relative;
+    left: 585px;
+    max-width: 100%;
+  }
+
+  label {
+    position: absolute;
+    left: 768px;
+    top: 520px;
+  }
+  input {
+    width: 203px;
+    background: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 23px;
+    padding-left: 24px;
+    border: none;
+    outline: none;
+  }
+  input::placeholder {
+    color: #22262a;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1142px) {
+  .photoshoot {
+    margin-bottom: 600px;
+  }
+  .frank-photoshoot {
+    display: none;
+  }
+  .photoshoot {
+    &__content {
+      input {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 565px) {
+  .photoshoot {
+    &__content {
+      .tattoo {
+        display: none;
+      }
+      .blonde {
+        padding-left: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 533px) {
+  .photoshoot {
+    .blonde {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,219 @@
+.header {
+  font-family: Poppins;
+  padding: 20px 20px;
+  max-width: 100%;
+  .container {
+    position: relative;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .full-container img {
+      max-width: 100%;
+    }
+
+    .main-logo {
+      text-decoration: none;
+      color: #f35626;
+      margin-right: 120px;
+      -webkit-linear-gradient: (92deg, #f35626, #feab3a);
+      background-clip: text;
+      animation: hue 5s infinite linear;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #ccc;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      margin-left: 20px;
+      text-align: center;
+      transition: 0.3s;
+      margin-right: 0;
+    }
+    nav a:hover {
+      color: #22262a;
+    }
+
+    ul {
+      list-style: none;
+      align-items: center;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      outline: none;
+      border: none;
+      color: #22262a;
+      padding: 0px;
+      margin: 0;
+    }
+    .search {
+      width: 30px;
+      transition: 0.3s;
+    }
+    .heart {
+      transition: 0.3s;
+    }
+
+    .cart {
+      width: 28px;
+      transition: 0.3s;
+    }
+    .cart:hover {
+      transform: scale(1.2);
+    }
+    .search:hover {
+      transform: scale(1.2);
+    }
+    .heart:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .burger {
+    display: none;
+
+    &-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      position: absolute;
+      top: 35%;
+      right: 0;
+      z-index: 999;
+      cursor: pointer;
+      
+    }
+    &-menu.active {
+      display: flex;
+      position: fixed;
+    }
+    &-line {
+      background: #22262a;
+      width: 30px;
+      height: 4px;
+    }
+    &-menu {
+      background: #fff;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 100;
+      nav a {
+        color: #22262a;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        justify-content: center;
+      }
+      nav a:hover {
+        color: aqua;
+      }
+      .search {
+        width: 35px;
+        transition: 0.3s;
+      }
+      li {
+        list-style: none;
+        align-items: center;
+      }
+      label {
+        display: flex;
+        align-items: center;
+      }
+      input {
+        color: #22262a;
+        padding: 0px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      input[type="search"] {
+        width: 160px;
+        padding: 8px 20px 8px 45px;
+        border: #22262a solid 2px;
+        font-size: 18px;
+        border-radius: 25px;
+        background-position: 2% 50%;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-image: url("../svgs/Search.svg");
+        background-color: transparent;
+        transition: 0.5s all ease-in-out;
+        filter: brightness(170%);
+      }
+      input[type="search"]:focus,
+      input[type="search"]:not(:placeholder-shown) {
+        width: 350px;
+        background-color: #fff;
+        filter: brightness(100%);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1126px) {
+  .header {
+    nav a {
+      margin-left: 15px;
+    }
+  }
+}
+@media screen and (max-width: 1096px) {
+  .header {
+    nav a {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header {
+    nav a {
+      margin-left: 8px;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 968px) {
+  .header {
+    nav a {
+      margin-left: 8px;
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 925px) {
+  .header {
+    nav a {
+      display: none;
+    }
+    ul {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+  }
+}
